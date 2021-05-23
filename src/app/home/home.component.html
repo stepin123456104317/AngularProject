@@ -1,0 +1,16 @@
+
+
+<mat-toolbar color="primary">
+    <div>
+        <a mat-button [routerLink]="'/movies'"> List of Movies </a>
+        <a mat-button [routerLink]="'/contactus'"> ContactUs </a>
+        <a mat-button [routerLink]="'/movieentry'">MovieEntry</a>
+        <a mat-button [routerLink]="''"> Log Out</a>
+      </div>
+</mat-toolbar>
+<apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [xaxis]="chartOptions.xaxis"
+    [title]="chartOptions.title"
+  ></apx-chart>

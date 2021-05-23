@@ -1,0 +1,23 @@
+mat-card{
+    height:200px;
+    width: 400px;
+    box-shadow: grey 10px;
+    background-color:whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cart{
+    background-color: rgb(1, 1, 27);
+    color: white;
+    font-weight: 600 !important;
+    height: 40px;
+    width: 100px;
+    margin-right: 40px;
+    margin-top: 10px;
+    border-radius: 10%;
+
+}
+.main{
+    padding-left: 30%;
+}

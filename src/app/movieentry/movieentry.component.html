@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <div class="main">
+        <a mat-button [routerLink]="'/home'"> Home </a>
+        <a mat-button [routerLink]="'/contactus'"> ContactUs </a>
+        <a mat-button [routerLink]="'/movies'">List of Movies</a>
+        <a mat-button [routerLink]="''"> Log Out</a>
+    </div>
+</mat-toolbar>
+<div><button class="cart" style="float: right;" (click)='openCartDialog()'>Cart</button></div>
+<div class="row card-group" style="padding-top: 60px;" >
+    <div class="col-4"  *ngFor="let movie of moviedata" style="padding-left: 33%;">
+        <mat-card>
+            <div *ngIf="movie.movieid==101"><button (click)='onclickImage(movie.movieid)'><img src="../../assets/101.jpg" alt="" style="height: 150px;width: 250px;"></button><br><br></div>
+            <div *ngIf="movie.movieid==102"> <button (click)='onclickImage(movie.movieid)'><img src="../../assets/102.jpg" alt="" style="height: 150px;width: 250px;"></button><br><br></div>
+            <div *ngIf="movie.movieid==201"> <button (click)='onclickImage(movie.movieid)'><img src="../../assets/201.jpg" alt="" style="height: 150px;width: 250px;"></button><br><br></div>
+            <div *ngIf="movie.movieid==202"> <button (click)='onclickImage(movie.movieid)'><img src="../../assets/202.jpg" alt="" style="height: 150px;width: 250px;"></button><br><br></div>
+            <button  (click)="addMovie(movie.movieid)">Add to Cart</button>
+        </mat-card> <br>
+    </div>
+  </div>

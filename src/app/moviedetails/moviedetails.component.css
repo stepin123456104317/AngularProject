@@ -1,0 +1,10 @@
+div{
+    height: 300px;
+    width: 400px;
+    box-shadow: black;
+}
+h5{
+    font-weight: 500 !important;
+    font-size: 15px;
+    margin-left: 10px;
+}

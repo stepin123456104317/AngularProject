@@ -1,0 +1,61 @@
+
+<mat-toolbar color="primary">
+    <div class="main2">
+        <a mat-button [routerLink]="'/home'"> Home </a>
+        <a mat-button [routerLink]="'/contactus'"> ContactUs </a>
+        <a mat-button [routerLink]="'/movieentry'">MovieEntry</a>
+        <a mat-button [routerLink]="''"> Log Out</a>
+    </div>
+</mat-toolbar>
+
+<div class="row card-group" style="padding-top: 80px;" >
+    <div class="col-4"  *ngFor="let movie of movies" style="padding-right: 44%;">
+        <mat-card >
+            <div *ngIf="movie.movieid==101"><button (click)='onclickImage(movie.movieid)'><img src="../../assets/101.jpg"style="height: 150px;width: 250px;">
+            </button>
+               <div class="img1">
+                MovieID:{{movie.movieid}}
+                <br>
+                MovieName:{{movie.moviename}}
+                <br>
+                ProductionName:{{movie.productionname}}
+                <br>
+                Language:{{movie.language}}
+               </div>
+                <br><br></div>
+            <div *ngIf="movie.movieid==102"><button (click)='onclickImage(movie.movieid)'><img src="../../assets/102.jpg" alt="" style="height: 150px;width: 250px;"></button>
+                <div class="img2">
+                    MovieID:{{movie.movieid}}
+                    <br>
+                    MovieName:{{movie.moviename}}
+                    <br>
+                    ProductionName:{{movie.productionname}}
+                    <br>
+                    Language:{{movie.language}}
+                   </div>
+                <br><br></div>
+            <div *ngIf="movie.movieid==201"><button (click)='onclickImage(movie.movieid)'><img src="../../assets/201.jpg" alt="" style="height: 150px;width: 250px;"></button>
+                <div class="img3">
+                    MovieID:{{movie.movieid}}
+                    <br>
+                    MovieName:{{movie.moviename}}
+                    <br>
+                    ProductionName:{{movie.productionname}}
+                    <br>
+                    Language:{{movie.language}}
+                   </div>
+                <br><br></div>
+            <div *ngIf="movie.movieid==202"><button (click)='onclickImage(movie.movieid)'><img src="../../assets/202.jpg" alt="" style="height: 150px;width: 250px;"></button>
+                <div class="img4">
+                    MovieID:{{movie.movieid}}
+                    <br>
+                    MovieName:{{movie.moviename}}
+                    <br>
+                    ProductionName:{{movie.productionname}}
+                    <br>
+                    Language:{{movie.language}}
+                   </div>
+                <br><br></div>
+        </mat-card> <br>
+    </div>
+</div>

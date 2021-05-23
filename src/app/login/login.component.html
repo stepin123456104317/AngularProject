@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">Login form</mat-toolbar>
+<div class="my">
+<form [formGroup]="formVar" style="align-items:center">
+    Username
+    <p><input type="text" id="name" name="name" formControlName="name">
+    </p>
+    Password
+    <p><input type="password" id="pwd" name="password" formControlName="pwd">
+    </p>
+ 
+ <button type="button" (click)="onSubmit()">LOGIN</button>
+
+</form>
+</div>

@@ -1,0 +1,14 @@
+mat-card{
+    height:300px;
+    width: 300px;
+    box-shadow: grey 10px;
+    background-color:whitesmoke;
+    text-align: left;
+    padding-top: 20px;
+}
+.img1,.img2,.img3,.img4{
+    font-weight: bold;
+}
+.main2{
+    padding-left: 30%;
+}

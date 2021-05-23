@@ -1,0 +1,13 @@
+<div>
+    <button style="color: red;font-size: 20px;float: right;" (click)="close()">x</button><br><br>
+    <div *ngFor="let item of moviedata" class="movie">
+        <h2>Movie Details</h2>
+        <h5>Movie Id : {{item.movieid}}</h5>
+        <h5>Movie Name : {{item.moviename}}</h5>
+        <h5>Production Name : {{item.productionname}}</h5>
+        <h5>Movie Type : {{item.movieType}}</h5>
+        <h5>Director : {{item.director}}</h5>
+        <h5>Cast : {{item.cast1}},{{item.cast2}}</h5>
+        <h5>Language : {{item.language}}</h5>
+        </div>
+</div>

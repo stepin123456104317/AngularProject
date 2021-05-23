@@ -1,0 +1,23 @@
+.middle{
+    padding-top: 0%;
+     
+ }
+ mat-card{
+     background-color: transparent;
+ }
+ pre{
+     font-weight: bold;
+     text-emphasis-color: black;
+ }
+ 
+ 
+   .my{
+       vertical-align: middle;
+       padding-top: 10%;
+       padding-left: 50%;
+       padding-right: 50%;
+   }
+   form {
+    border: 0px solid #f1f1f1;
+}
+
